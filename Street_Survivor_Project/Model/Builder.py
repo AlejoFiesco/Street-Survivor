@@ -11,7 +11,7 @@ class Builder_Satyr(Builder):
         self.factory = Factory_Satyr()
 
     def get_sprites(self):
-        return {"walk": self.factory.create_walking(), "idle": self.factory.create_idle()}
+        return {"walk": self.factory.create_walking(), "idle": self.factory.create_idle(), "attack": self.factory.create_attack(), "die": self.factory.create_dying()}
 
 class Director:
     __builder = None

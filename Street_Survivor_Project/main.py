@@ -37,6 +37,10 @@ while game_running:
             controller.action("up")
         elif event.key == pygame.K_s:
             controller.action("down")
+        elif event.key == pygame.K_k:
+            controller.action("die")
+        elif event.key == pygame.K_j:
+            controller.action("attack")
         else:
             controller.action("idle")
     else:
